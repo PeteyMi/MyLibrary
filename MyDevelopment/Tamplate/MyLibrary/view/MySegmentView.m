@@ -8,14 +8,6 @@
 
 #import "MySegmentView.h"
 
-@interface MySegmentItem : UIView
-
-@property(nonatomic, readonly) UILabel* textLabel;
-
-+(id)itemWithText:(NSString*)text;
--(id)initWithText:(NSString*)text;
-
-@end
 
 @interface MySegmentView ()
 

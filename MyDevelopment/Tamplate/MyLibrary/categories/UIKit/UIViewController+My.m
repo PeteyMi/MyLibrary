@@ -8,6 +8,7 @@
 
 #import "UIViewController+My.h"
 #import "NSObject+My.h"
+#import "UIView+My.h"
 
 #pragma mark - Nib
 @implementation UIViewController (Nib)
@@ -32,10 +33,14 @@
 #pragma mark- Keyboard
 @implementation UIViewController (Keyboard)
 
--(void)addKeyboardNotification
+-(void)addKeyboardNotificationWithTapGesture:(BOOL)value
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowNotification:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideNotification:) name:UIKeyboardWillHideNotification object:nil];
+    if (value == YES) {
+        UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHideTapGestureAction:)];
+        [self.view addGestureRecognizer:tapGesture];
+    }
 }
 -(void)removeKeyboardNotification
 {
@@ -49,6 +54,12 @@
 -(void)keyboardWillHideNotification:(NSNotification*)notification
 {
     
+}
+
+-(void)keyboardHideTapGestureAction:(nullable UITapGestureRecognizer*)tapGesture
+{
+    [self.view hideKeyboard];
+    [self.view removeGestureRecognizer:tapGesture];
 }
 
 @end

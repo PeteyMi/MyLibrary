@@ -17,10 +17,11 @@
 #pragma mark - Keyboard
 @interface UIViewController (Keyboard)
 
--(void)addKeyboardNotification;
+-(void)addKeyboardNotificationWithTapGesture:(BOOL)value;
 -(void)removeKeyboardNotification;
 -(void)keyboardWillShowNotification:(nullable NSNotification* )notification;
 -(void)keyboardWillHideNotification:(nullable NSNotification*)notification;
+-(void)keyboardHideTapGestureAction:(nullable UITapGestureRecognizer*)tapGesture;
 @end
 
 #pragma mark - NavigationBar

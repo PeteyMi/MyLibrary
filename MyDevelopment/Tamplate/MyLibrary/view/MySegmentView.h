@@ -8,14 +8,25 @@
 
 #import "MyView.h"
 
+IB_DESIGNABLE
+@interface MySegmentItem : UIView
+
+@property(nonatomic, readonly) UILabel* textLabel;
+
++(id)itemWithText:(NSString*)text;
+-(id)initWithText:(NSString*)text;
+
+@end
+
+IB_DESIGNABLE
 @interface MySegmentView : MyView
 
 @property(nonatomic, weak) id delegate;
-@property(nonatomic, strong) UIFont* textFont;
-@property(nonatomic, strong) UIColor* textColor;
-@property(nonatomic, strong) UIColor* lineColor;
-@property(nonatomic, assign) CGFloat lineHeight;
-@property(nonatomic, assign) NSInteger selectedIndex;
+@property(nonatomic, strong) IBInspectable UIFont* textFont;
+@property(nonatomic, strong) IBInspectable UIColor* textColor;
+@property(nonatomic, strong) IBInspectable UIColor* lineColor;
+@property(nonatomic, assign) IBInspectable CGFloat lineHeight;
+@property(nonatomic, assign) IBInspectable NSInteger selectedIndex;
 
 @property(nonatomic, strong) NSArray* itemsText;
 
