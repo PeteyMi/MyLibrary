@@ -51,6 +51,15 @@
 		5AB2FFE11C2D7CBD0066956C /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2FFCA1C2D7CBD0066956C /* MyTableViewController.m */; };
 		5AB2FFE21C2D7CBD0066956C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2FFCC1C2D7CBD0066956C /* MyViewController.m */; };
 		5AB2FFE41C2D7F6E0066956C /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB2FFE31C2D7F6E0066956C /* TemplateInfo.plist */; };
+		5AF555841C37937E00E0689A /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF555721C37937E00E0689A /* DDAbstractDatabaseLogger.m */; };
+		5AF555851C37937E00E0689A /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF555741C37937E00E0689A /* DDASLLogger.m */; };
+		5AF555861C37937E00E0689A /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF555761C37937E00E0689A /* DDFileLogger.m */; };
+		5AF555871C37937E00E0689A /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF555791C37937E00E0689A /* DDLog.m */; };
+		5AF555881C37937E00E0689A /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5557B1C37937E00E0689A /* DDTTYLogger.m */; };
+		5AF555891C37937E00E0689A /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5557E1C37937E00E0689A /* DDContextFilterLogFormatter.m */; };
+		5AF5558A1C37937E00E0689A /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF555801C37937E00E0689A /* DDDispatchQueueLogFormatter.m */; };
+		5AF5558B1C37937E00E0689A /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF555821C37937E00E0689A /* DDMultiFormatter.m */; };
+		5AF5558C1C37937E00E0689A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AF555831C37937E00E0689A /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +131,24 @@
 		5AB2FFCB1C2D7CBD0066956C /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		5AB2FFCC1C2D7CBD0066956C /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		5AB2FFE31C2D7F6E0066956C /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		5AF555711C37937E00E0689A /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		5AF555721C37937E00E0689A /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		5AF555731C37937E00E0689A /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		5AF555741C37937E00E0689A /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		5AF555751C37937E00E0689A /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		5AF555761C37937E00E0689A /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		5AF555771C37937E00E0689A /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		5AF555781C37937E00E0689A /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		5AF555791C37937E00E0689A /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		5AF5557A1C37937E00E0689A /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		5AF5557B1C37937E00E0689A /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		5AF5557D1C37937E00E0689A /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		5AF5557E1C37937E00E0689A /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		5AF5557F1C37937E00E0689A /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		5AF555801C37937E00E0689A /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		5AF555811C37937E00E0689A /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		5AF555821C37937E00E0689A /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		5AF555831C37937E00E0689A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +360,7 @@
 		5AB2FFBF1C2D7CBD0066956C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5AF555701C37937E00E0689A /* CocoaLumberjack */,
 				5AB2FFC01C2D7CBD0066956C /* GCDMulticastDelegate.h */,
 				5AB2FFC11C2D7CBD0066956C /* GCDMulticastDelegate.m */,
 			);
@@ -364,6 +392,39 @@
 				5AB2FFCC1C2D7CBD0066956C /* MyViewController.m */,
 			);
 			path = viewController;
+			sourceTree = "<group>";
+		};
+		5AF555701C37937E00E0689A /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				5AF555711C37937E00E0689A /* DDAbstractDatabaseLogger.h */,
+				5AF555721C37937E00E0689A /* DDAbstractDatabaseLogger.m */,
+				5AF555731C37937E00E0689A /* DDASLLogger.h */,
+				5AF555741C37937E00E0689A /* DDASLLogger.m */,
+				5AF555751C37937E00E0689A /* DDFileLogger.h */,
+				5AF555761C37937E00E0689A /* DDFileLogger.m */,
+				5AF555771C37937E00E0689A /* DDLog+LOGV.h */,
+				5AF555781C37937E00E0689A /* DDLog.h */,
+				5AF555791C37937E00E0689A /* DDLog.m */,
+				5AF5557A1C37937E00E0689A /* DDTTYLogger.h */,
+				5AF5557B1C37937E00E0689A /* DDTTYLogger.m */,
+				5AF5557C1C37937E00E0689A /* Extensions */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		5AF5557C1C37937E00E0689A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AF5557D1C37937E00E0689A /* DDContextFilterLogFormatter.h */,
+				5AF5557E1C37937E00E0689A /* DDContextFilterLogFormatter.m */,
+				5AF5557F1C37937E00E0689A /* DDDispatchQueueLogFormatter.h */,
+				5AF555801C37937E00E0689A /* DDDispatchQueueLogFormatter.m */,
+				5AF555811C37937E00E0689A /* DDMultiFormatter.h */,
+				5AF555821C37937E00E0689A /* DDMultiFormatter.m */,
+				5AF555831C37937E00E0689A /* README.txt */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A9B8A0F1C2C2BB30079DD94 /* LaunchScreen.storyboard in Resources */,
+				5AF5558C1C37937E00E0689A /* README.txt in Resources */,
 				5AB2FFCD1C2D7CBD0066956C /* buildTemplate.sh in Resources */,
 				5A9B8A0C1C2C2BB30079DD94 /* Assets.xcassets in Resources */,
 				5A10D2DE1C312DE400E71141 /* Main.storyboard in Resources */,
@@ -506,22 +568,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB201091C2D8D140066956C /* NSString+My.m in Sources */,
+				5AF555861C37937E00E0689A /* DDFileLogger.m in Sources */,
 				5AB2FFDF1C2D7CBD0066956C /* MyView.m in Sources */,
+				5AF555891C37937E00E0689A /* DDContextFilterLogFormatter.m in Sources */,
+				5AF5558B1C37937E00E0689A /* DDMultiFormatter.m in Sources */,
 				5AB2FFDE1C2D7CBD0066956C /* GCDMulticastDelegate.m in Sources */,
 				5AB2FFE01C2D7CBD0066956C /* MyCollectionViewController.m in Sources */,
 				5AB2FFD41C2D7CBD0066956C /* NSObject+My.m in Sources */,
 				5AB2010C1C2D8D670066956C /* NSDate+My.m in Sources */,
+				5AF555851C37937E00E0689A /* DDASLLogger.m in Sources */,
 				5A9B8A071C2C2BB30079DD94 /* ViewController.m in Sources */,
 				5A10D2D21C30E36000E71141 /* MyRefreshHeaderView.m in Sources */,
+				5AF555871C37937E00E0689A /* DDLog.m in Sources */,
 				5A10D2CF1C30E2B600E71141 /* MyRefreshBaseView.m in Sources */,
 				5A9B8A041C2C2BB30079DD94 /* AppDelegate.m in Sources */,
 				5AB201031C2D8A7D0066956C /* UIView+My.m in Sources */,
 				5AB2010F1C2D8DBE0066956C /* NSFileManager+My.m in Sources */,
 				5A9B8A011C2C2BB30079DD94 /* main.m in Sources */,
 				5AB2FFE11C2D7CBD0066956C /* MyTableViewController.m in Sources */,
+				5AF555841C37937E00E0689A /* DDAbstractDatabaseLogger.m in Sources */,
 				5AB201061C2D8B950066956C /* UIViewController+My.m in Sources */,
+				5AF555881C37937E00E0689A /* DDTTYLogger.m in Sources */,
 				5AB2FFDD1C2D7CBD0066956C /* MBProgressHUD.m in Sources */,
 				5A10D2D91C310EF500E71141 /* MyRefreshFooterView.m in Sources */,
+				5AF5558A1C37937E00E0689A /* DDDispatchQueueLogFormatter.m in Sources */,
 				5AB201131C2D94590066956C /* MySegmentView.m in Sources */,
 				5A10D2CA1C30DDD600E71141 /* MyTextFieldTableViewCell.m in Sources */,
 				5AB2FFE21C2D7CBD0066956C /* MyViewController.m in Sources */,
